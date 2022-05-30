@@ -1,0 +1,251 @@
+/* Selector Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body { 
+    color: antiquewhite;
+    background-image: linear-gradient(black, rgb(12, 12, 12));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #f1eb3e;
+    font-size: 18px; 
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    color:#f1eb3e;
+}
+
+.titles {
+    color:#f1eb3e;
+    font-family: 'Limelight';
+    font-size: 40px;
+    padding:5% 0;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content:flex-start;
+    width: 10%;
+    padding-top: 0.4%;
+}
+
+.menu-container {
+    color: #f1eb3e;
+    padding: 1% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 45%;
+    padding-top: 0.8%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.menu-item {
+    font-size: 20px;
+}
+
+.socialbar {
+    width: 15%;
+    margin-left: 10%;
+    padding-top: 0.5%;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.videohome {
+    width:100%;
+}
+
+.shows-container {
+    display: flex;
+    justify-content: center;
+    margin: 7% 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shows {
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 0;
+    align-items:center;
+    width: 35%;
+}
+
+.discografia-container {
+    display: flex;
+    justify-content: center;
+}
+
+.discografia {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.banda {
+    padding-top: 5%;
+}
+
+.banda img {
+    width:100%;
+}
+
+.banda-integrantes {
+    text-align: center;
+    color: #f1eb3e;
+    font-size: 25px;
+    position: relative;
+    bottom: 120px;
+}
+
+.otintegrantes {
+    padding:2% 0;
+}
+
+.banda-integrantes ul li {
+    padding: 0.2%;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 8%;
+    grid-row-gap: 40%;
+    justify-content: center;
+    padding-bottom:18%;
+}
+
+.videos-grid-item {
+    width:120%;
+    height: 135%;
+}
+
+.masvideos  {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.fotos-container {
+    display: flex;
+    justify-content: center;
+    padding: 7% 0;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.maximg:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:150%;
+    height:100%;
+}
+
+.biografia-container {
+    display:flex;
+    justify-content: center;
+}
+
+.biografia {
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    margin: 7% 0;
+    align-items: center;
+}
+
+.textobio {
+    display: flex;
+    width: 25%;
+    font-style: italic;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.biotitle {
+    writing-mode:vertical-lr;
+    text-orientation: upright;
+    font-size: 70px;
+    display: flex;
+}
+
+footer {
+    text-align: center;
+    margin: 13% 0;
+}
+
+.redes-container {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0;
+}
+
+.redes {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 8%;
+    grid-row-gap: 2%;
+    justify-content: center;
+    padding-bottom:5%;
+}
+
+.merch-grid-item {
+    width:100%;
+}
+
+.producto {
+    padding-top: 20%;
+    text-align: center;
+}
+
+.precios {
+    padding: 10% 0;
+    color: white;
+}
+
+.contacto a {
+    color:#f1eb3e;
+}
+
+.contacto h2, .contacto h3, .contacto h4{
+    color:white;
+}
+
+
