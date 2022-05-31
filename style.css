@@ -18,8 +18,6 @@ a {
     font-size: 18px; 
 }
 
-
-
 ul {
     list-style: none;
 }
@@ -60,6 +58,28 @@ h1, h2, h3, h4 {
 
 .menu-item {
     font-size: 20px;
+    display: inline-block;
+    position: relative;
+    padding:5% 0;
+}
+
+.menu-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  margin: -3% 0;
+  background-color: #f1eb3e;
+  transform-origin: bottom;
+  transition: transform 0.35s ease-out;
+}
+
+.menu-item:hover:after {
+  transform: scaleX(1);
+  transform-origin:center;
 }
 
 .socialbar {
@@ -101,6 +121,144 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center;
     flex-wrap:wrap;
+}
+
+.fecha-parvadomus {
+    position: absolute;
+    left:7.5%;
+    top:235%;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.parvadomus:hover .fecha-parvadomus {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-parvadomus:hover {
+    opacity: 0.5;  
+}
+
+.fecha-glamouryviolencia {
+    position: absolute;
+    left:19%;
+    top:235%;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.glamouryviolencia:hover .fecha-glamouryviolencia {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-glamouryviolencia:hover {
+    opacity: 0.5;  
+}
+
+.fecha-momentoextrano {
+    position: absolute;
+    left:32.8%;
+    top:235%;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.momentoextrano:hover .fecha-momentoextrano {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-momentoextrano:hover {
+    opacity: 0.5;  
+}
+
+.fecha-iman {
+    position: absolute;
+    left:48.7%;
+    top:235%;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.iman:hover .fecha-iman {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-iman:hover {
+    opacity: 0.5;  
+}
+
+.fecha-dvd15anos {
+    position: absolute;
+    left:60%;
+    top:235%;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.dvd15anos:hover .fecha-dvd15anos {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-dvd15anos:hover {
+    opacity: 0.5;  
+}
+
+.fecha-bunker {
+    position: absolute;
+    left:74.7%;
+    top:235%;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.bunker:hover .fecha-bunker {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-bunker:hover {
+    opacity: 0.5;  
+}
+
+.fecha-fango {
+    position: absolute;
+    left:88%;
+    top:235%;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.fango:hover .fecha-fango {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img-fango:hover {
+    opacity: 0.5;  
+}
+
+.fecha-parvadomus , .fecha-glamouryviolencia , .fecha-momentoextrano , 
+.fecha-iman , .fecha-dvd15anos , .fecha-bunker , .fecha-fango {
+    line-height: 1.5;
 }
 
 .banda {
@@ -167,7 +325,6 @@ h1, h2, h3, h4 {
     top:-25px;
     left:-35px;
     width:150%;
-    height:100%;
 }
 
 .biografia-container {
