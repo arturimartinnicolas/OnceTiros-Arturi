@@ -16,34 +16,72 @@
 
 <body>
     <header>
-        <nav class="menu-container">
-            <div class="logo">
-            <a href="index.html"><img src="/images/oncetiros.png" alt="logo"></a></div>
-            <ul class="menu" >
-                <li><a class="menu-item" href="#linkshows">Shows</a></li>
-                <li><a class="menu-item" href="#linkdiscografia">Discos</a></li>
-                <li><a class="menu-item" href="#linkbanda">Banda</a></li>
-                <li><a class="menu-item" href="#galeria">Galería</a></li>
-                <li><a class="menu-item" href="merch.html">Merchandising</a></li>
-                <li><a class="menu-item" href="contacto.html">Contacto</a></li>
-            </ul>
-
-            <ul class="socialbar" >
-                <li><a href="https://www.instagram.com/oncetiroscomuy"><img src="/images/instagramlogo.png" alt="instagramlogo"></a></li>
-                <li><a href="https://www.facebook.com/OnceTirosComUy"><img src="/images/facebooklogo.png" alt="facebooklogo"></a></li>
-                <li><a href="https://www.twitter.com/OnceTirosComUy"><img src="/images/twitterlogo.png" alt="twitterlogo"></a></li>
-                <li><a href="https://www.youtube.com/channel/UCscrgJH-frXogcAShoXNPHQ"><img src="/images/youtubelogo.png" alt="youtubelogo"></a></li>
-                <li><a href="https://open.spotify.com/artist/7w79n5kCkTEaewxNBynvhM"><img src="/images/spotifylogo.png" alt="spotifylogo"></a></li>
-            </ul>
+        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center pt-3 pb-3 fs-5">
+            <a href="index.html" class="navbar-brand d-flex w-25 mr-auto text-warning px-5"><img src="/images/oncetiros.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-75" id="collapsingNavbar3">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link text-warning px-4" href="index.html#linkshows">Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning px-4" href="index.html#linkdiscografia">Discos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning px-4" href="index.html#linkbanda">Banda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning px-4" href="index.html#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning px-4" href="index.htmlmerch.html">Merchandising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning px-4" href="index.htmlcontacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-50 px-5 justify-content-end">
+                <li><a class="px-2" href="https://www.instagram.com/oncetiroscomuy"><img src="/images/instagramlogo.png" alt="instagramlogo"></a></li>
+                <li><a class="px-2" href="https://www.facebook.com/OnceTirosComUy"><img src="/images/facebooklogo.png" alt="facebooklogo"></a></li>
+                <li><a class="px-2" href="https://www.twitter.com/OnceTirosComUy"><img src="/images/twitterlogo.png" alt="twitterlogo"></a></li>
+                <li><a class="px-2" href="https://www.youtube.com/channel/UCscrgJH-frXogcAShoXNPHQ"><img src="/images/youtubelogo.png" alt="youtubelogo"></a></li>
+                <li><a class="px-2" href="https://open.spotify.com/artist/7w79n5kCkTEaewxNBynvhM"><img src="/images/spotifylogo.png" alt="spotifylogo"></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+    
+    <div id="carouselExampleControls" class="carousel slide" class="carousel slide" data-interval="false">
+        <div class="carousel-inner ">
+          <div class="carousel-item active ">
+            <video width="100%" autoplay muted src="videos/OnceTirosMaldicionDVD15Años.mp4"></video>
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-warning">Maldición</h2>
+                <h6>DVD 15 AÑOS</h6>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <video width="100%" autoplay muted src="videos/OnceTirosQueSeriaDeMi.mp4"></video>
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-warning">Qué Sería De Mí</h2>
+                <h6>BÚNKER</h6>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-    <video class="videohome" src="videos/OnceTirosMaldiciónDVD15Años.mp4" controls></video>
-
-
-
-    <section id="linkshows" class="shows-container">
-        <div class="titles"><h1>PRÓXIMOS SHOWS</h1></div>
+    <section id="linkshows" class="shows-container text-light">
+        <div class="titles text-warning"><p>PRÓXIMOS SHOWS</p></div>
         <div class="shows">
           <div>
             <div><p>6 May 22</p></div>
@@ -82,55 +120,55 @@
 
     </section>
             
-    <section id="linkdiscografia" class="discografia-container">
+    <section id="linkdiscografia" class="discografia-container  text-warning">
         <div class="discografia">
             <div class="parvadomus">
                 <img class="img-parvadomus" src="/images/parvadomus.png" alt="parvadomus">
                 <div class="fecha-parvadomus">
-                    <h3>2002</h3>
-                    <h3>Parvadomus</h3>
+                    <h4>2002</h4>
+                    <h4>Parvadomus</h4>
                 </div>
             </div>
             <div class="glamouryviolencia">
                 <img class="img-glamouryviolencia" src="/images/glamouryviolencia.png" alt="glamouryviolencia"></a>
                 <div class="fecha-glamouryviolencia">
-                    <h3>2005</h3>
-                    <h3>Glamour & Violencia</h3>
+                    <h4>2005</h4>
+                    <h4>Glamour & Violencia</h4>
                 </div>
             </div>
             <div class="momentoextrano">
                 <img class="img-momentoextrano" src="/images/momentoextrano.png" alt="momentoextrano"></a>
                 <div class="fecha-momentoextrano">
-                    <h3>2007</h3>
-                    <h3>Momento Extraño</h3>
+                    <h4>2007</h4>
+                    <h4>Momento Extraño</h4>
                 </div>
             </div>
             <div class="iman">
                 <img class="img-iman" src="/images/iman.png" alt="iman"></a>
                 <div class="fecha-iman">
-                    <h3>2011</h3>
-                    <h3>Imán</h3>
+                    <h4>2011</h4>
+                    <h4>Imán</h4>
                 </div>
             </div>
             <div class="dvd15anos">
                 <img class="img-dvd15anos" src="/images/dvd15anos.png" alt="dvd15años"></a>
                 <div class="fecha-dvd15anos">
-                    <h3>2015</h3>
-                    <h3>DVD 15 Años</h3>
+                    <h4>2015</h4>
+                    <h4>DVD 15 Años</h4>
                 </div>
             </div>
             <div class="bunker">
                 <img class="img-bunker" src="/images/bunker.png" alt="bunker"></a>
                 <div class="fecha-bunker">
-                    <h3>2016</h3>
-                    <h3>Búnker</h3>
+                    <h4>2016</h4>
+                    <h4>Búnker</h4>
                 </div>
             </div>
             <div class="fango">
                 <img class="img-fango" src="/images/fango.png" alt="fango"></a>
                 <div class="fecha-fango">
-                    <h3>2019</h3>
-                    <h3>Fango</h3>
+                    <h4>2019</h4>
+                    <h4>Fango</h4>
                 </div>
             </div>
        </div>
@@ -139,7 +177,7 @@
 
     <section id="linkbanda" class="banda">
                 <img src="/images/othome.jpg" alt="fotobanda">
-        <div class="banda-integrantes">
+        <div class="banda-integrantes text-warning">
             <ul>
                 <li><p class="otintegrantes">Once Tiros:</p></li>
                 <li><p>Pablo Silvera</p></li>
@@ -152,7 +190,7 @@
     </section>
     
     <section class="videos">
-        <div class="titles"><h1>GALERÍA</h1></div>
+        <div class="titles text-warning"><p>GALERÍA</p></div>
         <div class="videos-grid">
             <div><iframe class="videos-grid-item" src="https://www.youtube.com/embed/1UKso7K1pps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
             <div><iframe class="videos-grid-item"  src="https://www.youtube.com/embed/WASpu_Zm-gE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
@@ -160,7 +198,7 @@
             <div><iframe class="videos-grid-item"  src="https://www.youtube.com/embed/g2Op7CvmLIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div><iframe class="videos-grid-item"  src="https://www.youtube.com/embed/iBkuCg25TfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             <div><iframe class="videos-grid-item" src="https://www.youtube.com/embed/ElDgMAFpIR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
-            <div class="masvideos"><a href="https://www.youtube.com/channel/UCscrgJH-frXogcAShoXNPHQ"><h3>MÁS VIDEOS</h3></a></div>
+            <div class="masvideos"><a href="https://www.youtube.com/channel/UCscrgJH-frXogcAShoXNPHQ" class="text-warning"><h3>MÁS VIDEOS</h3></a></div>
         </div>
         
         </section>
@@ -209,9 +247,9 @@
     </section>
 
     <section id="biografia-container">
-        <div class="biografia">
+        <div class="biografia text-light">
             <div>
-                <h1 class="titles biotitle">BIO</h1>
+                <h1 class="titles  biotitle text-warning">BIO</h1>
             </div>
             <div class="textobio">
                 <p>Once Tiros fue una banda de rock uruguaya formada a fines de los noventa en el barrio montevideano Punta Carretas. El grupo transitó por varios géneros, teniendo como base fundamental el ska-punk. Hoy, con casi 20 años de banda, 6 discos editados y un montón de seguidores en Uruguay y Latinoamérica, Once Tiros pisa fuerte y sigue despachando potencia roquera en sus shows, es considerada una de las mejores bandas de rock del Uruguay tanto por su calidad sonora como por su fuerza musical en sus shows en vivo.</p>
@@ -220,7 +258,7 @@
     </section>
 
     <footer>
-        <h4>SEGUINOS EN:</h4>
+        <h5 class="text-warning">SEGUINOS EN:</h5>
         <nav class="redes-container">
             <ul class="redes">
                 <li><a href="https://www.instagram.com/oncetiroscomuy"><img src="/images/instagramlogo.png" alt="instagramlogo"></a></li>
