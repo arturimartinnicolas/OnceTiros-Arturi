@@ -1,6 +1,0 @@
-1- Clarifiqué y diferencié la descripción de todas las imágenes.
-2- Agregué la descripción de todos los videos.
-3- Sumé meta description.
-4- Añadí meta keywords.
-5- Cambié los titles por otros con más caracteres.
-6- Sumé el protocolo Open Graph
