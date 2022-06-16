@@ -1,3 +1,7 @@
+.redes-container, .foto-container, .fotos-container, .fotos-container .fotos {
+  display: flex;
+  justify-content: center; }
+
 /* Selector Universal */
 * {
   margin: 0;
@@ -31,8 +35,6 @@ footer {
   text-align: center; }
 
 .redes-container {
-  display: flex;
-  justify-content: center;
   padding: 3% 0; }
   .redes-container .redes {
     width: 18%;
@@ -75,59 +77,56 @@ footer {
     grid-row-start: 3;
     grid-row-end: 4; }
 
-.foto-container {
+.foto-container .foto {
   display: flex;
-  justify-content: center; }
-  .foto-container .foto {
-    display: flex;
-    width: 100%; }
-    .foto-container .foto .content {
-      position: relative;
-      width: 100%;
-      max-width: 400px;
-      margin: auto;
-      overflow: hidden; }
-      .foto-container .foto .content :hover .content-overlay {
-        opacity: 1; }
-      .foto-container .foto .content .content-overlay {
-        background: rgba(0, 0, 0, 0.7);
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 0;
-        transition: all 0.4s ease-in-out 0s; }
-      .foto-container .foto .content .content-image {
-        width: 100%; }
-      .foto-container .foto .content .content-details {
-        position: absolute;
-        text-align: center;
-        padding-left: 1em;
-        padding-right: 1em;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        opacity: 0;
-        transform: translate(-50%, -50%);
-        transition: all 0.3s ease-in-out 0s; }
-      .foto-container .foto .content :hover .content-details {
-        top: 50%;
-        left: 50%;
-        opacity: 1; }
-        .foto-container .foto .content :hover .content-details h3 {
-          color: #fff;
-          font-weight: 500;
-          font-size: 1.5vw;
-          letter-spacing: 0.15em;
-          margin-bottom: 0.5em; }
-        .foto-container .foto .content :hover .content-details p {
-          color: #fff;
-          font-size: 1vw; }
-      .foto-container .foto .content .fadeIn-bottom {
-        top: 80%; }
+  width: 100%; }
+  .foto-container .foto .content {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden; }
+    .foto-container .foto .content :hover .content-overlay {
+      opacity: 1; }
+    .foto-container .foto .content .content-overlay {
+      background: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      height: 100%;
+      width: 150%;
+      top: -25px;
+      left: -35px;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      transition: all 0.4s ease-in-out 0s; }
+    .foto-container .foto .content .content-image {
+      width: 100%; }
+    .foto-container .foto .content .content-details {
+      position: absolute;
+      text-align: center;
+      padding-left: 1em;
+      padding-right: 1em;
+      width: 150%;
+      top: -25px;
+      left: -35px;
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease-in-out 0s; }
+    .foto-container .foto .content :hover .content-details {
+      top: 50%;
+      left: 50%;
+      opacity: 1; }
+      .foto-container .foto .content :hover .content-details h3 {
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.5vw;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em; }
+      .foto-container .foto .content :hover .content-details p {
+        color: #fff;
+        font-size: 1vw; }
+    .foto-container .foto .content .fadeIn-bottom {
+      top: 80%; }
 
 .textobio {
   font-style: italic;
@@ -137,23 +136,18 @@ footer {
 
 .biotitle {
   writing-mode: vertical-lr;
-  text-orientation: upright;
-  font-size: 70px; }
+  text-orientation: upright; }
 
 @media (max-width: 400px) {
   .fotos-container {
     display: none; } }
 
 .fotos-container {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap; }
   .fotos-container .fotos {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap; }
     .fotos-container .fotos .maximg:hover {
       position: relative;
+      width: 150%;
       top: -25px;
-      left: -35px;
-      width: 150%; }
+      left: -35px; }

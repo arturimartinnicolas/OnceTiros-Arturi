@@ -1,0 +1,5 @@
+@mixin pos($width,$top,$left) {
+    width: $width;
+    top: $top;
+    left: $left;
+}
