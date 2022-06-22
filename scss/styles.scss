@@ -1,6 +1,9 @@
 @import '../scss/base/_extends.scss';
 @import '../scss/base/_mixins.scss';
 
+/* Variables */
+$atext: center;
+
 /* Selector Universal */
 * {
     margin: 0;
@@ -28,12 +31,12 @@ ul {
 .titles {
 	font-family: 'Limelight';
 	margin: 5% 0;
-	text-align: center;
+	text-align: $atext;
 	font-size: 3vw;
 	letter-spacing: 4px;
 }
 footer {
-    text-align: center;
+    text-align: $atext;
 }
 .redes-container {
     @extend %flex-center;
@@ -48,7 +51,7 @@ footer {
     width:100%;
 }
 .banda-integrantes {
-    text-align: center;
+    text-align: $atext;
     font-size: 1.5vw;
     position: relative;
     bottom: 120px; 
@@ -78,7 +81,7 @@ footer {
         height: 135%;
     }
     .masvideos {
-        text-align: center;
+        text-align: $atext;
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 3;
@@ -114,7 +117,7 @@ footer {
             }
             .content-details {
                 position: absolute;
-                text-align: center;
+                text-align: $atext;
                 padding-left: 1em;
                 padding-right: 1em;
                 @include pos(150%,-25px,-35px);

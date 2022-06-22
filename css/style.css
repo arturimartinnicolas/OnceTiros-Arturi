@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center; }
 
+/* Variables */
 /* Selector Universal */
 * {
   margin: 0;
