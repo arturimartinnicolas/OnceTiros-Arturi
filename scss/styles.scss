@@ -32,7 +32,7 @@ ul {
 	font-family: 'Limelight';
 	margin: 5% 0;
 	text-align: $atext;
-	font-size: 3vw;
+	font-size: 50px;
 	letter-spacing: 4px;
 }
 footer {
@@ -52,9 +52,9 @@ footer {
 }
 .banda-integrantes {
     text-align: $atext;
-    font-size: 1.5vw;
+    font-size: 25px;
     position: relative;
-    bottom: 120px; 
+    bottom: 180px; 
     ul {
         li {
             padding: 0.2%;
@@ -62,12 +62,8 @@ footer {
     }
 }
 .otintegrantes {
-    font-size:2vw; }
-@media (max-width: 400px) {
-    .videos {
-        display: none;
-    }
-}
+    font-size:40px; }
+
 .videos-grid {
     display: grid;
     grid-template-columns: 0.2fr 0.2fr 0.2fr;
@@ -133,13 +129,13 @@ footer {
                     h3 {
                         color: #fff;
                         font-weight: 500;
-                        font-size:1.5vw;
+                        font-size:20px;
                         letter-spacing: 0.15em;
                         margin-bottom: 0.5em;
                     }
                     p {
                         color: #fff;
-                        font-size:1vw;
+                        font-size:15px;
                     }
                 }
             }
@@ -159,12 +155,9 @@ footer {
 .biotitle {
     writing-mode:vertical-lr;
     text-orientation: upright;
+    font-size: 60px;
 }
-@media (max-width: 400px) {
-    .fotos-container {
-      display:none;
-    }
-  }
+
 .fotos-container {
     @extend %flex-center;
     flex-wrap:wrap;
@@ -180,3 +173,8 @@ footer {
     }
 }
 
+@media (max-width: 600px) {
+    .biotitle {
+      writing-mode: horizontal-tb;
+    }
+  }

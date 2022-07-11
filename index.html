@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- Meta Description -->
     <meta name="description" content="Somos la página oficial de Once Tiros, aquí podrás encontrar información sobre la banda, la discografía y los próximos shows.">
     <!-- Keywords -->
@@ -27,38 +27,45 @@
 
 <body>
     <header>
-        <nav class="navbar justify-content-between fs-5">
+          <nav class="navbar justify-content-between navbar-expand-md navbar-dark fs-5">
             <a href="index.html" class="nav navbar-light col-lg-1 justify-content-center"><img src="/images/oncetiros.png" alt="logo once tiros"></a>
-            <ul class="navbar mt-2 col-lg-9 justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link text-warning px-4" href="index.html#linkshows">Shows</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+              <ul class="navbar-nav col-lg-9 mt-2 justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link text-warning px-4" href="index.html#linkshows">Shows</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-warning px-4" href="index.html#linkdiscografia">Discos</a>
+                  <a class="nav-link text-warning px-4" href="index.html#linkdiscografia">Discos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-warning px-4" href="index.html#linkbanda">Banda</a>
+                  <a class="nav-link text-warning px-4" href="index.html#linkbanda">Banda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-warning px-4" href="index.html#galeria">Galería</a>
+                  <a class="nav-link text-warning px-4" href="index.html#galeria">Galería</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-warning px-4" href="merch.html">Merchandising</a>
+                  <a class="nav-link text-warning px-4" href="merch.html">Merchandising</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-warning px-4" href="contacto.html">Contacto</a>
+                  <a class="nav-link text-warning px-4" href="contacto.html">Contacto</a>
                 </li>
-            </ul>
-            <ul class="nav col-lg-2">
+              </ul>
+              <ul class="nav d-none d-lg-flex col-lg-2">
                 <li><a class="px-2" href="https://www.instagram.com/oncetiroscomuy"><img src="/images/instagramlogo.png" alt="logo instagram"></a></li>
                 <li><a class="px-2" href="https://www.facebook.com/OnceTirosComUy"><img src="/images/facebooklogo.png" alt="logo facebook"></a></li>
                 <li><a class="px-2" href="https://www.twitter.com/OnceTirosComUy"><img src="/images/twitterlogo.png" alt="logo twitter"></a></li>
                 <li><a class="px-2" href="https://www.youtube.com/channel/UCscrgJH-frXogcAShoXNPHQ"><img src="/images/youtubelogo.png" alt="logo youtube"></a></li>
                 <li><a class="px-2" href="https://open.spotify.com/artist/7w79n5kCkTEaewxNBynvhM"><img src="/images/spotifylogo.png" alt="spotify logo"></a></li>
                 </ul>
+            </div>
           </nav>
-    </header>
-    
+
+          <header>
+
+
     <div id="carouselExampleControls" class="carousel slide" class="carousel slide" data-interval="false">
         <div class="carousel-inner ">
           <div class="carousel-item active ">
@@ -85,6 +92,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      
 
 <section id="linkshows"> 
       <h1 class="titles text-warning">PRÓXIMOS SHOWS</h1>
@@ -131,8 +139,7 @@
    
  <section id="linkdiscografia">
 <div class="foto-container">
-
-    <div class="foto">
+    <div class="foto d-none d-lg-block">
         <div class="content">
           <a href="" target="_blank">
             <div class="content-overlay"></div>
@@ -143,9 +150,8 @@
             </div>
           </a>
         </div>
-    </div>
-
-    <div class="foto">
+  </div>
+    <div class="foto d-none d-lg-block">
         <div class="content">
           <a href="" target="_blank">
             <div class="content-overlay"></div>
@@ -156,9 +162,10 @@
             </div>
           </a>
         </div>
-    </div>
 
-    <div class="foto">
+  </div>
+
+    <div class="foto d-none d-lg-block">
         <div class="content">
           <a href="" target="_blank">
             <div class="content-overlay"></div>
@@ -169,9 +176,9 @@
             </div>
           </a>
         </div>
-    </div>
 
-    <div class="foto">
+  </div>
+    <div class="foto d-none d-lg-block">
         <div class="content">
           <a href="" target="_blank">
             <div class="content-overlay"></div>
@@ -183,6 +190,8 @@
           </a>
         </div>
     </div>
+
+
 
     <div class="foto">
         <div class="content">
@@ -241,7 +250,7 @@
     </section>      
         
        
-    <section class="videos">
+    <section class="videos d-none d-lg-block">
         <div class="titles text-warning">GALERÍA</div>
         <div class="videos-grid">
             <div><iframe class="videos-grid-item" src="https://www.youtube.com/embed/1UKso7K1pps" title="video Que Seria De Mi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
@@ -259,23 +268,23 @@
     <section id="galeria" class="fotos-container">
         <div class="fotos">
         <div>
-            <img class="maximg" src="/images/galeria1.png" alt="foto Movistar Arena 2005">
+            <img class="maximg d-none d-lg-block" src="/images/galeria1.png" alt="foto Movistar Arena 2005">
         </div>
         <div>
-            <img class="maximg" src="/images/galeria2.png" alt="foto Hipodromo 2006">
+            <img class="maximg d-none d-lg-block" src="/images/galeria2.png" alt="foto Hipodromo 2006">
         </div>
 
         <div>
-            <img class="maximg" src="/images/galeria3.png" alt="foto Estadio UNO 2007">
+            <img class="maximg d-none d-lg-block" src="/images/galeria3.png" alt="foto Estadio UNO 2007">
         </div>
         <div>
-            <img class="maximg" src="/images/galeria4.png" alt="foto Estadio GEBA 2008">
+            <img class="maximg d-none d-lg-block" src="/images/galeria4.png" alt="foto Estadio GEBA 2008">
         </div>
         <div>
-            <img class="maximg" src="/images/galeria5.png" alt="foto Atenas 2009">
+            <img class="maximg d-none d-lg-block" src="/images/galeria5.png" alt="foto Atenas 2009">
         </div>
         <div>
-            <img class="maximg" src="/images/galeria6.png" alt="foto Estadio Unico 2010">
+            <img class="maximg d-none d-lg-block" src="/images/galeria6.png" alt="foto Estadio Unico 2010">
         </div>
         <div>
             <img class="maximg" src="/images/galeria7.png" alt="foto artística de la banda">
@@ -298,9 +307,9 @@
     </section>
 
     <section class="container">
-        <div class="text-light row  justify-content-center">
+        <div class="text-light row justify-content-center">
             <div class="col-lg-6 d-flex align-items-center">
-                <h6 class="biotitle text-warning">BIO</h6>
+                <h1 class="biotitle text-warning">BIO</h1>
             </div>
             <div class="textobio col-lg-6">
                 <p>Once Tiros fue una banda de rock uruguaya formada a fines de los noventa en el barrio montevideano Punta Carretas. El grupo transitó por varios géneros, teniendo como base fundamental el ska-punk. Hoy, con casi 20 años de banda, 6 discos editados y un montón de seguidores en Uruguay y Latinoamérica, Once Tiros pisa fuerte y sigue despachando potencia roquera en sus shows, es considerada una de las mejores bandas de rock del Uruguay tanto por su calidad sonora como por su fuerza musical en sus shows en vivo.</p>

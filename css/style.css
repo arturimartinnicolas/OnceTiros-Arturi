@@ -29,7 +29,7 @@ ul {
   font-family: 'Limelight';
   margin: 5% 0;
   text-align: center;
-  font-size: 3vw;
+  font-size: 50px;
   letter-spacing: 4px; }
 
 footer {
@@ -47,18 +47,14 @@ footer {
 
 .banda-integrantes {
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 25px;
   position: relative;
-  bottom: 120px; }
+  bottom: 180px; }
   .banda-integrantes ul li {
     padding: 0.2%; }
 
 .otintegrantes {
-  font-size: 2vw; }
-
-@media (max-width: 400px) {
-  .videos {
-    display: none; } }
+  font-size: 40px; }
 
 .videos-grid {
   display: grid;
@@ -120,12 +116,12 @@ footer {
       .foto-container .foto .content :hover .content-details h3 {
         color: #fff;
         font-weight: 500;
-        font-size: 1.5vw;
+        font-size: 20px;
         letter-spacing: 0.15em;
         margin-bottom: 0.5em; }
       .foto-container .foto .content :hover .content-details p {
         color: #fff;
-        font-size: 1vw; }
+        font-size: 15px; }
     .foto-container .foto .content .fadeIn-bottom {
       top: 80%; }
 
@@ -137,11 +133,8 @@ footer {
 
 .biotitle {
   writing-mode: vertical-lr;
-  text-orientation: upright; }
-
-@media (max-width: 400px) {
-  .fotos-container {
-    display: none; } }
+  text-orientation: upright;
+  font-size: 60px; }
 
 .fotos-container {
   flex-wrap: wrap; }
@@ -152,3 +145,7 @@ footer {
       width: 150%;
       top: -25px;
       left: -35px; }
+
+@media (max-width: 600px) {
+  .biotitle {
+    writing-mode: horizontal-tb; } }
