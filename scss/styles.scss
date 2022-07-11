@@ -101,7 +101,6 @@ footer {
             .content-overlay {
                 background: rgba(0,0,0,0.7);
                 position: absolute;
-                height: 100%;
                 @include pos(150%,-25px,-35px);
                 bottom: 0;
                 right: 0;
@@ -138,6 +137,7 @@ footer {
                         font-size:15px;
                     }
                 }
+                
             }
             .fadeIn-bottom {
                 top: 80%;
